@@ -11,9 +11,25 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/p5.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/addons/p5.dom.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/addons/p5.sound.min.js"></script>
+        <style>
+            body {
+                padding-top: 30px;
+                padding-bottom: 20px;
+            }
+        </style>
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        <script src="js/tablero.jsx"></script>
+        <h1>Bienvenido al tablero interactivo</h1>
+        <br></br>
+        
+        <div id="canvas"></div>
+        <!-- Load React. -->
+        <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+        <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+        <!-- Load babel to translate JSX to js. -->
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+        <script src="js/componente.jsx" type="text/babel" ></script>
     </body>
 </html>

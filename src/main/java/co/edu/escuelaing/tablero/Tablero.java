@@ -11,7 +11,10 @@ package co.edu.escuelaing.tablero;
  */
 public class Tablero {
 
-    public static void main(String[] args) {
-        System.out.println("Hello World!");
+    private static Tablero _instance;
+    
+    public Tablero getInstance(){
+        return _instance;
     }
+    
 }
